@@ -1,4 +1,4 @@
-const CACHE_NAME = 'volta-shell-v2';
+const CACHE_NAME = 'volta-shell-v3';
 const APP_SHELL = ['./', './index.html', './manifest.webmanifest', './icons/volta-192.png', './icons/volta-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_SHELL)).then(() => self.skipWaiting()));
